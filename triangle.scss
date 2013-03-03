@@ -1,0 +1,38 @@
+@mixin triangle($direction, $width, $height, $color) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  @if $direction == "north" {
+    border-width: 0 $width / 2 $height $width / 2;
+    border-bottom-color: $color;
+  }
+  @if $direction == "north-east" {
+    border-width: 0 $width $height 0;
+    border-right-color: $color;
+  }
+  @if $direction == "east" {
+    border-width: $height / 2 0 $height / 2 $width;
+    border-left-color: $color;
+  }
+  @if $direction == "south-east" {
+    border-width: 0 0 $height $width;
+    border-bottom-color: $color;
+  }
+  @if $direction == "south" {
+    border-width: $height $width / 2 0 $width / 2;
+    border-top-color: $color;
+  }
+  @if $direction == "south-west" {
+    border-width: $height 0 0 $width;
+    border-left-color: $color;
+  }
+  @if $direction == "west" {
+    border-width: $height / 2 $width $height / 2 0;
+    border-right-color: $color;
+  }
+  @if $direction == "north-west" {
+    border-width: $height $width 0 0;
+    border-top-color: $color;
+  }
+}
