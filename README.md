@@ -5,7 +5,7 @@ Create triangles with pure CSS. Useful for creating carets on pseudo elements.
 ## Installation
 
 ```
-fonzie install triangle
+bower install fonzie-triangle
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ You can turn any box into a triangle:
 
 ```scss
 .triangle {
-  @include triangle('north', $width: 20px, $height: 10px, $color: red);
+  @include fz-triangle('north', $width: 20px, $height: 10px, $color: red);
 }
 ```
 
@@ -23,7 +23,7 @@ But they're useful for creating carets on pseudo elements:
 ```scss
 .tab {
   &:after {
-    @include triangle('south', $width: 16px, $height: 8px, $color: #555);
+    @include fz-triangle('south', $width: 16px, $height: 8px, $color: #555);
     display: block;
     content: '';
     position: absolute;

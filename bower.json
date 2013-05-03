@@ -1,0 +1,13 @@
+{
+  "name": "fonzie-triangle",
+  "version": "0.1.0",
+  "main": "index.scss",
+  "description": "Create trianges with pure CSS",
+  "author": "Anthony Short",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "README.md",
+    "components"
+  ]
+}

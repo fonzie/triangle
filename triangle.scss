@@ -1,4 +1,4 @@
-@mixin triangle($direction, $width, $height, $color) {
+@mixin fz-triangle($direction, $width, $height, $color) {
   width: 0;
   height: 0;
   border-style: solid;
